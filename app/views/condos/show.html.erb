@@ -1,0 +1,26 @@
+<div class="page-header">
+  <%= link_to condos_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_condo_path(@condo), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show condo</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @condo.name %></dd>
+
+  <dt>Street address:</dt>
+  <dd><%= @condo.street_address %></dd>
+
+  <dt>Post code:</dt>
+  <dd><%= @condo.post_code %></dd>
+
+  <dt>Phone number:</dt>
+  <dd><%= @condo.phone_number %></dd>
+
+</dl>
